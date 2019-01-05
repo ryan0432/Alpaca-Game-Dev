@@ -1,0 +1,119 @@
+@font-face {
+    font-family: '04b03';
+    src: url('../font/04b_03__-webfont.woff2') format('woff2'),
+         url('../font/04b_03__-webfont.woff') format('woff'),
+         url('../font/04b_03__-webfont.ttf') format('truetype'),
+         url('../font/04b_03__-webfont.svg#04b03regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b03b';
+    src: url('../font/04b_03b_-webfont.woff2') format('woff2'),
+         url('../font/04b_03b_-webfont.woff') format('woff'),
+         url('../font/04b_03b_-webfont.ttf') format('truetype'),
+         url('../font/04b_03b_-webfont.svg#04b03bregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b08';
+    src: url('../font/04b_08__-webfont.woff2') format('woff2'),
+         url('../font/04b_08__-webfont.woff') format('woff'),
+         url('../font/04b_08__-webfont.ttf') format('truetype'),
+         url('../font/04b_08__-webfont.svg#04b08regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b09';
+    src: url('../font/04b_09__-webfont.woff2') format('woff2'),
+         url('../font/04b_09__-webfont.woff') format('woff'),
+         url('../font/04b_09__-webfont.ttf') format('truetype'),
+         url('../font/04b_09__-webfont.svg#04b09regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b11';
+    src: url('../font/04b_11__-webfont.woff2') format('woff2'),
+         url('../font/04b_11__-webfont.woff') format('woff'),
+         url('../font/04b_11__-webfont.ttf') format('truetype'),
+         url('../font/04b_11__-webfont.svg#04b11regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b19';
+    src: url('../font/04b_19__-webfont.woff2') format('woff2'),
+         url('../font/04b_19__-webfont.woff') format('woff'),
+         url('../font/04b_19__-webfont.ttf') format('truetype'),
+         url('../font/04b_19__-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b20';
+    src: url('../font/04b_20__-webfont.woff2') format('woff2'),
+         url('../font/04b_20__-webfont.woff') format('woff'),
+         url('../font/04b_20__-webfont.ttf') format('truetype'),
+         url('../font/04b_20__-webfont.svg#04b20regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b21';
+    src: url('../font/04b_21__-webfont.woff2') format('woff2'),
+         url('../font/04b_21__-webfont.woff') format('woff'),
+         url('../font/04b_21__-webfont.ttf') format('truetype'),
+         url('../font/04b_21__-webfont.svg#04b21regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b24';
+    src: url('../font/04b_24__-webfont.woff2') format('woff2'),
+         url('../font/04b_24__-webfont.woff') format('woff'),
+         url('../font/04b_24__-webfont.ttf') format('truetype'),
+         url('../font/04b_24__-webfont.svg#04b24regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b25';
+    src: url('../font/04b_25__-webfont.woff2') format('woff2'),
+         url('../font/04b_25__-webfont.woff') format('woff'),
+         url('../font/04b_25__-webfont.ttf') format('truetype'),
+         url('../font/04b_25__-webfont.svg#04b25regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b30';
+    src: url('../font/04b_30__-webfont.woff2') format('woff2'),
+         url('../font/04b_30__-webfont.woff') format('woff'),
+         url('../font/04b_30__-webfont.ttf') format('truetype'),
+         url('../font/04b_30__-webfont.svg#04b30regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '04b31';
+    src: url('../font/04b_31__-webfont.woff2') format('woff2'),
+         url('../font/04b_31__-webfont.woff') format('woff'),
+         url('../font/04b_31__-webfont.ttf') format('truetype'),
+         url('../font/04b_31__-webfont.svg#04b31regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
