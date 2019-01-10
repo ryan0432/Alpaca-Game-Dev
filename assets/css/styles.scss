@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6
 
 h1
 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 h2
@@ -127,13 +127,7 @@ h3
 
   h1, h2
   {
-    margin-bottom: 0.3em;
-  }
-
-  p
-  {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
   }
 
   .hero-description
@@ -141,6 +135,7 @@ h3
     color: #FFF49A;
     font-size: 1.1em;
     text-shadow: 1px 1px #f4A386;
+    padding-bottom: 0.5rem;
   }
 
   .hero-icons
