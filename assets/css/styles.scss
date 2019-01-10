@@ -8,8 +8,9 @@
 html, body
 {
   margin: 0;
+  box-sizing: border-box;
   font-family: '04b03';
-  background: #8CCDC0 url('../img/bg.svg') 0px 0px / 1008px 224px repeat fixed;
+  background: #8CCDC0 url('../img/bg.svg') 0px 0px / 1008px 224px repeat scroll;
 }
 
 // Header styles
@@ -25,7 +26,7 @@ h1, h2, h3, h4, h5, h6
 
 h1
 {
-  font-size: 3em;
+  font-size: 4em;
 }
 
 h2
@@ -61,11 +62,11 @@ h3
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: var(--nav-bar-height) 45rem 10% auto;
+  grid-template-rows: var(--nav-bar-height) auto auto auto;
   grid-template-areas:
   "top-nav       top-nav       top-nav       top-nav"
-  "hero-logo     hero-logo     hero-about    hero-about"
-  "project-title project-title project-title project-title"
+  "logo-blank    hero-logo     hero-about    about-blank"
+  "sns-l-blank   sns-icons     sns-icons     sns-r-blank"
   "project-icon  project-icon  project-icon  project-icon";
 }
   
@@ -86,7 +87,7 @@ h3
   a
   {
     display: inline-flex;
-    font-size: 1.25em;
+    font-size: 1.2em;
     width: 4em;
     height: var(--nav-bar-height);
     color: #f2f2f2;
@@ -109,36 +110,63 @@ h3
 .hero-logo
 {
   grid-area: hero-logo;
-
-  img
-  {
-    display: flex;
-    float: right;
-    width: 25em;
-  }
-
+  display: block;
   margin-top: auto;
-  padding: 2rem 1.5rem 1rem 1rem;
+  margin-left: auto;
+  width: 26em;
+  padding: 1em 1em 1em 2rem;
 }
 
 // Style of hero about
 .hero-about
 {
   grid-area: hero-about;
+  margin-top: auto;
+  width: 26em;
+  padding: 1em 2em 1em 1em;
 
   h1, h2
   {
     margin-bottom: 0.3em;
   }
 
+  p
+  {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
   .hero-description
   {
     color: #FFF49A;
-    width: 25rem;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     text-shadow: 1px 1px #f4A386;
   }
-  
-  margin-top: auto;
-  padding: 2rem 1rem 1rem 1.5rem;
+
+  .hero-icons
+  {
+    display: block;
+
+    &>img
+    {
+      height: 1.6em;
+      padding-bottom: 0.2em;
+    }
+  }
 }
+
+.sns-icons
+{
+  grid-area: sns-icons;
+  display: flex;
+  width: 52em;
+  justify-self: center;
+  justify-content: space-between;
+
+  .sns-icon-container
+  {
+    width: 6em;
+    padding: 1em;
+  }
+}
+
