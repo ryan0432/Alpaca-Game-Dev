@@ -3,7 +3,6 @@ function hover(element)
     // skill icons hover
     if (element.id == "cpp-icon")
     {
-        
         element.src = "./assets/img/sk_Cpp_hover.svg";
     }
     if (element.id == "csharp-icon")
