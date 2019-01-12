@@ -37,7 +37,7 @@ h3 {
 }
 
 .single-stroke::before {
-  content: attr(string);
+  content: attr(data);
   position: absolute;
   left: 0em;
   -webkit-text-stroke: 0.4rem #f4A386;
@@ -109,16 +109,31 @@ h3 {
   padding-bottom: 0.5rem;
 }
 
-.hero-about .hero-icons {
-  display: block;
+.hero-about .skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  width: 26em;
+  justify-self: center;
+  justify-content: flex-start;
 }
 
-.hero-about .hero-icons > img {
+.hero-about .skill-icons .skill-icon-container {
   height: 1.6em;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.4em;
+  padding-right: 0.4em;
+  position: relative;
 }
 
-.sns-icons {
+.hero-about .skill-icons .skill-icon-container .under {
+  height: 1.6em;
+}
+
+.hero-about .skill-icons .skill-icon-container .over {
+  height: 1.6em;
+  position: absolute;
+}
+
+.sns-btns {
   grid-area: sns-icons;
   display: flex;
   width: 52em;
@@ -126,7 +141,13 @@ h3 {
   justify-content: space-between;
 }
 
-.sns-icons .sns-icon-container {
+.sns-btns .sns-icon-container {
   width: 6em;
   padding: 1em;
+  position: relative;
+}
+
+.sns-btns .sns-icon-container .over {
+  width: 6em;
+  position: absolute;
 }

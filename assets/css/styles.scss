@@ -48,7 +48,7 @@ h3
 
   &::before
   {
-    content: attr(string);
+    content: attr(data);
     position: absolute;
     left: 0em;
     -webkit-text-stroke: 0.4rem #f4A386;
@@ -138,19 +138,36 @@ h3
     padding-bottom: 0.5rem;
   }
 
-  .hero-icons
+  .skill-icons
   {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    width: 26em;
+    justify-self: center;
+    justify-content: flex-start;
 
-    &>img
+    .skill-icon-container
     {
       height: 1.6em;
-      padding-bottom: 0.2em;
+      padding-bottom: 0.4em;
+      padding-right: 0.4em;
+      position: relative;
+      
+      .under
+      {
+        height: 1.6em;
+      }
+
+      .over
+      {
+        height: 1.6em;
+        position: absolute;
+      }
     }
   }
 }
 
-.sns-icons
+.sns-btns
 {
   grid-area: sns-icons;
   display: flex;
@@ -162,6 +179,13 @@ h3
   {
     width: 6em;
     padding: 1em;
+    position: relative;
+
+    .over
+    {
+      width: 6em;
+      position: absolute;
+    }
   }
 }
 
