@@ -35,12 +35,14 @@
 </head>
 
 <body>
-    <section class="hero-section">
+    <section class="hero-section" id="about">
         <div class="top-nav">
-            <a href="#">Top</a>
-            <a href="#">Projects</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="javascript:void(0)" class="open-nav-btn" onclick="openDropdown()">☰</a>
+        </div>
+        <div class="dropdownn-nav" id="dropdownNav">
+            <a href="#about" class="dropdown-content" onclick="closeDropdown()">About</a>
+            <a href="#projects" class="dropdown-content" onclick="closeDropdown()">Projects</a>
+            <a href="#blog" class="dropdown-content" onclick="closeDropdown()">Blog</a>
         </div>
 
         <div class="hero-logo">
@@ -148,8 +150,11 @@
                 </a>
             </div>
         </div>
-
     </section>
+
+    <section class="hero-section" id="projects"></section>
+
+    <!-- <section class="hero-section" id="projects"></section> -->
 
     <!-- Custom JS -->
     <script src="./assets/js/scripts.js"></script>
