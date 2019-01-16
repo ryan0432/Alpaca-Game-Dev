@@ -74,15 +74,16 @@ p, li
 {
 
   display: grid;
-  //height: 100vh;
+  height: 100vh;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: var(--nav-bar-height) auto auto auto;
+  grid-template-rows: var(--nav-bar-height) /*var(--nav-bar-height)*/ auto auto auto;
   grid-gap: 1.5em;
   grid-template-areas:
   "top-nav       top-nav       top-nav       top-nav"
+  // ".             .             .             .      "
   ".             hero-logo     hero-about    .      "
-  ".             sns-icons     sns-icons     .      "
-  ".             project-icon  project-icon  .      ";
+  ".             sns-btns      sns-btns      .      "
+  ".             project-btns  project-btns  .      ";
 }
   
 // Top navigation bar styles
@@ -207,7 +208,7 @@ p, li
 
 .sns-btns
 {
-  grid-area: sns-icons;
+  grid-area: sns-btns;
   display: flex;
   width: 52em;
   justify-self: center;
@@ -230,7 +231,7 @@ p, li
 .project-section
 {
   display: grid;
-  //height: 100vh;
+  height: 100vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: var(--nav-bar-height) var(--nav-bar-height) auto var(--nav-bar-height);
   grid-gap: 1.5em;

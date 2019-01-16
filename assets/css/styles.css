@@ -57,10 +57,11 @@ p, li {
 
 .hero-section {
   display: grid;
+  height: 100vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: var(--nav-bar-height) auto auto auto;
   grid-gap: 1.5em;
-  grid-template-areas: "top-nav       top-nav       top-nav       top-nav" ".             hero-logo     hero-about    .      " ".             sns-icons     sns-icons     .      " ".             project-icon  project-icon  .      ";
+  grid-template-areas: "top-nav       top-nav       top-nav       top-nav" ".             hero-logo     hero-about    .      " ".             sns-btns      sns-btns      .      " ".             project-btns  project-btns  .      ";
 }
 
 .top-nav {
@@ -164,7 +165,7 @@ p, li {
 }
 
 .sns-btns {
-  grid-area: sns-icons;
+  grid-area: sns-btns;
   display: flex;
   width: 52em;
   justify-self: center;
@@ -183,6 +184,7 @@ p, li {
 
 .project-section {
   display: grid;
+  height: 100vh;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: var(--nav-bar-height) var(--nav-bar-height) auto var(--nav-bar-height);
   grid-gap: 1.5em;
