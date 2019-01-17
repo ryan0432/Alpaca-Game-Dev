@@ -1,5 +1,7 @@
 :root {
   --nav-bar-height: 3.5rem;
+  --nav-bar-theme-color: #024666;
+  --nav-bar-hover-color: #0273a7;
 }
 
 html, body {
@@ -59,9 +61,9 @@ p, li {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: var(--nav-bar-height) auto auto auto;
+  grid-template-rows: var(--nav-bar-height) 1.4fr 0.6fr;
   grid-gap: 1.5em;
-  grid-template-areas: "top-nav       top-nav       top-nav       top-nav" ".             hero-logo     hero-about    .      " ".             sns-btns      sns-btns      .      " ".             project-btns  project-btns  .      ";
+  grid-template-areas: "top-nav       top-nav       top-nav       top-nav" ".             hero-logo     hero-about    .      " ".             sns-btns      sns-btns      .      ";
 }
 
 .top-nav {
@@ -72,7 +74,7 @@ p, li {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: #333;
+  background-color: var(--nav-bar-theme-color);
   z-index: 1;
 }
 
@@ -81,7 +83,7 @@ p, li {
   font-size: 1.2em;
   width: var(--nav-bar-height);
   height: var(--nav-bar-height);
-  color: #f2f2f2;
+  color: #ddd;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -89,15 +91,15 @@ p, li {
 }
 
 .top-nav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--nav-bar-hover-color);
+  color: #ddd;
 }
 
 .dropdownn-nav {
   display: flex;
   position: fixed;
   flex-direction: column;
-  background-color: #333;
+  background-color: var(--nav-bar-theme-color);
   height: 0%;
   width: 100%;
   top: var(--nav-bar-height);
@@ -118,8 +120,8 @@ p, li {
 }
 
 .dropdownn-nav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--nav-bar-hover-color);
+  color: #ddd;
 }
 
 .hero-logo {
@@ -136,8 +138,16 @@ p, li {
   margin-top: auto;
 }
 
+.hero-about .hero-about-headings {
+  display: flex;
+}
+
 .hero-about .hero-description {
   padding-bottom: 0.5rem;
+}
+
+.hero-about .hero-description p {
+  margin-top: 0;
 }
 
 .hero-about .skill-icons {
@@ -184,11 +194,10 @@ p, li {
 
 .project-section {
   display: grid;
-  height: 100vh;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: var(--nav-bar-height) var(--nav-bar-height) auto var(--nav-bar-height);
+  grid-template-rows: var(--nav-bar-height) var(--nav-bar-height) auto;
   grid-gap: 1.5em;
-  grid-template-areas: "top-nav        top-nav            top-nav            top-nav     " ".              project-heading    project-heading    .           " "project-area   project-area       project-area       project-area" ".              .                  .                  .           ";
+  grid-template-areas: "top-nav        top-nav            top-nav            top-nav     " ".              project-heading    project-heading    .           " "project-area   project-area       project-area       project-area";
 }
 
 .project-heading {
@@ -207,10 +216,10 @@ p, li {
 
 .project-area .project-container {
   display: grid;
-  margin: 0rem 1rem 1rem 1rem;
+  margin: 0rem 1rem 2rem 1rem;
   grid-template-columns: 2rem 22rem 2rem;
-  grid-template-rows: 2rem auto 2rem var(--nav-bar-height);
-  grid-template-areas: "top-left    top-center      top-right" "mid-left    project-content mid-right" "bottom-left bottom-center   bottom-right" ".           .               .           ";
+  grid-template-rows: 2rem auto 2rem;
+  grid-template-areas: "top-left    top-center      top-right" "mid-left    project-content mid-right" "bottom-left bottom-center   bottom-right";
 }
 
 .project-area .project-container .top-left {
@@ -337,4 +346,70 @@ p, li {
   mask-image: url("../img/post_DnRgt_corner.png");
   mask-mode: alpha;
   mask-size: contain;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  height: var(--nav-bar-height);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--nav-bar-theme-color);
+  color: #ddd;
+}
+
+@media only screen and (max-width: 920px) {
+  .hero-section {
+    display: grid;
+    height: auto;
+    grid-template-columns: auto;
+    grid-template-rows: var(--nav-bar-height) auto auto auto;
+    grid-gap: 1.5em;
+    grid-template-areas: "top-nav" "hero-logo" "hero-about" "sns-btns";
+  }
+  .hero-logo {
+    margin: auto;
+  }
+  .hero-about {
+    margin: auto;
+  }
+  .hero-about .hero-about-headings {
+    justify-content: center;
+  }
+  .hero-about .skill-icons {
+    width: auto;
+    justify-content: center;
+  }
+  .sns-btns {
+    width: 26em;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .sns-btns .sns-icon-container {
+    margin: 0.5em 1em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero-logo {
+    width: 21em;
+  }
+  .hero-about {
+    width: auto;
+  }
+  .hero-about .hero-description {
+    width: auto;
+    padding: 0em 2em 0em 2em;
+  }
+  .hero-about .skill-icons {
+    width: auto;
+    padding: 0em 2em;
+  }
+  .project-section {
+    grid-template-columns: auto;
+    grid-template-areas: "top-nav" "project-heading" "project-area" ".";
+  }
+  .project-area .project-container {
+    margin: 0rem 0rem 2rem 0rem;
+  }
 }
