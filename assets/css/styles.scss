@@ -513,7 +513,7 @@ p, li
 {
   .hero-logo
   {
-    width: 21em;
+    width: 22em;
   }
 
   .hero-about
@@ -523,7 +523,7 @@ p, li
     .hero-description
     {
       width: auto;
-      padding: 0em 2em 0em 2em;
+      padding: 0em 2em;
     }
 
     .skill-icons
@@ -531,6 +531,11 @@ p, li
       width: auto;
       padding: 0em 2em;
     }
+  }
+
+  .sns-btns
+  {
+    width: 22rem;
   }
 
   .project-section
@@ -547,7 +552,53 @@ p, li
   {
     .project-container
     {
+      grid-template-columns: 2rem 19rem 2rem;
       margin: 0rem 0rem 2rem 0rem;
+
+      .project-content
+      {
+        .project-thumbnail
+        {
+          width: 19rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px)
+{
+  h1
+  {
+    font-size: 3em;
+  }
+
+  .hero-logo
+  {
+    width: 18em;
+  }
+
+  .sns-btns
+  {
+    width: 18rem;
+  }
+
+  .project-area
+  {
+    .project-container
+    {
+      grid-template-columns: 2rem 15rem 2rem;
+      margin: 0rem 0rem 2rem 0rem;
+
+      .project-content
+      {
+        .project-thumbnail
+        {
+          width: 15rem;
+          margin-bottom: 1rem;
+        }
+      }
     }
   }
 }
