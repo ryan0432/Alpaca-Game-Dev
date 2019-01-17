@@ -242,6 +242,12 @@ p, li {
   background-image: url("../img/post_updn_edge.png");
   background-repeat: repeat-x;
   background-size: contain;
+  -webkit-mask-image: url("../img/post_updn_edge.png");
+  -webkit-mask-mode: alpha;
+  -webkit-mask-size: contain;
+  mask-image: url("../img/post_updn_edge.png");
+  mask-mode: alpha;
+  mask-size: contain;
 }
 
 .project-area .project-container .top-right {
@@ -264,6 +270,12 @@ p, li {
   background-image: url("../img/post_side_edge.png");
   background-repeat: repeat-y;
   background-size: contain;
+  -webkit-mask-image: url("../img/post_side_edge.png");
+  -webkit-mask-mode: alpha;
+  -webkit-mask-size: contain;
+  mask-image: url("../img/post_side_edge.png");
+  mask-mode: alpha;
+  mask-size: contain;
 }
 
 .project-area .project-container .project-content {
@@ -310,6 +322,12 @@ p, li {
   background-image: url("../img/post_side_edge.png");
   background-repeat: repeat-y;
   background-size: contain;
+  -webkit-mask-image: url("../img/post_side_edge.png");
+  -webkit-mask-mode: alpha;
+  -webkit-mask-size: contain;
+  mask-image: url("../img/post_side_edge.png");
+  mask-mode: alpha;
+  mask-size: contain;
 }
 
 .project-area .project-container .bottom-left {
@@ -332,6 +350,12 @@ p, li {
   background-image: url("../img/post_updn_edge.png");
   background-size: contain;
   background-repeat: repeat-x;
+  -webkit-mask-image: url("../img/post_updn_edge.png");
+  -webkit-mask-mode: alpha;
+  -webkit-mask-size: contain;
+  mask-image: url("../img/post_updn_edge.png");
+  mask-mode: alpha;
+  mask-size: contain;
 }
 
 .project-area .project-container .bottom-right {
